@@ -1,0 +1,83 @@
+*,
+body::before,
+body::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 0% 2.5%;
+}
+
+footer {
+  margin-top: 40rem;
+}
+
+img[alt$="-cover"] {
+  width: 25rem;
+  height: 15rem;
+  display: block;
+  object-fit: contain;
+  margin-right: 1.5vw;
+}
+
+h2 {
+  margin: 2.5rem 0;
+  text-align: center;
+
+}
+
+h4 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+img[title$="-band"] {
+  display: block;
+  margin: 0 auto;
+  width: 40rem;
+  height: auto;
+}
+
+img[title$="-cover"] {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  width: 30rem;
+  height: auto;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.album-title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.artwork-credit {
+  padding-top: 2.5vh;
+  margin-bottom: 77px;
+}
+
+figure {
+  display: block;
+}
+
+#cybertruck {
+  /* display the image on a new line */
+  display: block;
+  /* make the image fill the entire container */
+  width: 300px;
+  height: auto;
+}
+

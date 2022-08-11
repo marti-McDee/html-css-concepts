@@ -1,0 +1,43 @@
+input {
+  display: block;
+  border: 2px solid rgba(211, 211, 211, 0.3);
+  background-color: rgba(233, 220, 220, 0.15);
+  color: darkgray;
+  width: 430px;
+  height: 45px;
+  font-size: 18px;
+}
+
+h1 {
+  margin-bottom: 35px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+button {
+  vertical-align: top;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 185px;
+  height: 50px;
+}
+
+.pickup-location {
+  margin-bottom: 8px;
+}
+
+.destination {
+  margin-bottom: 25px;
+}
+
+.request-button {
+  background-color: black;
+  color: white;
+}
+
+.schedule-button {
+  background-color: rgba(245, 237, 237, 0.74);
+  border: 0;
+  margin-left: 20px;
+}

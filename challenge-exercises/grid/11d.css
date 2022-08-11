@@ -1,0 +1,74 @@
+p {
+  font-family: 'Roboto', Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pet-pic {
+  width: 100%;
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+
+.animal-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.pet-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 43px;
+  border-radius: 25px;
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+}
+
+.pet-pic {
+  min-height: 250px;
+  max-height: 250px;
+  max-width: 240px;
+}
+
+.mutual-friends {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
+
+.pet-name-row {
+  margin-bottom: 10px;
+}
+
+.animal-name {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.add-friend-button {
+  background-color: rgb(60, 113, 211);
+  color: white;
+  border: 1px;
+  border-radius: 4px;
+  text-align: center;
+  height: 40px;
+  width: 120px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 42.99px 1fr;
+  column-gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+}

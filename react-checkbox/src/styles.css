@@ -1,0 +1,27 @@
+*,
+body::before,
+body::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.checkbox {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  border: 0.2rem solid #ddd;
+  margin-right: 0.4rem;
+}
+
+input[type="checkbox"]{
+  visibility: hidden;
+}
+
+
+

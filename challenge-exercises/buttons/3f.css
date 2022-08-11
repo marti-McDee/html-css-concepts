@@ -1,0 +1,27 @@
+button {
+  height: 36px;
+  width: 124px;
+  text-align: center;
+  border-radius: 18px;
+}
+
+.price-tag {
+  color: darkgreen;
+  margin-top: 25px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  margin-right: 16px;
+  background-color: yellow;
+}
+
+.buy-now-button {
+  background-color: orange;
+}
+
+.back-to-homepage {
+  color: rgb(17, 95, 141);
+  font-size: 20px;
+}

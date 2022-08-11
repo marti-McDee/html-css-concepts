@@ -1,0 +1,26 @@
+table, td, thead{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+table {
+  height: 200px;
+  width: 500px;
+  margin: 0 0 30px 0;
+}
+
+td {
+  text-align: center;
+}
+
+tfoot tr{
+  border: none;
+}
+
+#hoursOfOperation{
+  background-color: #ffa500;
+}
+
+#hoursOfOperation thead{
+  background-color: #808080;
+}

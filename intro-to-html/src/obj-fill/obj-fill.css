@@ -1,0 +1,35 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+img  {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 10px 0;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
