@@ -8,13 +8,7 @@ $('.ripple').ready(() => {
     $('.wave:nth-child(' + i + ')').css('z-index', 40 - i)
 
     // animate waves
-    $('.wave:nth-child(' + i + ')').css(
-      'animation delay',
-      0.05 * (40 - i) + 's'
-    )
-    $('.wave:nth-child(' + i + ')').css(
-      'backgroundColor',
-      'hsl(100,0%,' + i + '%)'
-    )
+    $('.wave:nth-child(' + i + ')').css('animation delay', 0.05 * (40 - i) + 's')
+    $('.wave:nth-child(' + i + ')').css('backgroundColor', 'hsl(100,0%,' + i + '%)')
   }
 })
