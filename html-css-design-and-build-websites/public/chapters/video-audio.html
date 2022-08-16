@@ -12,24 +12,33 @@
 </head>
 
 <body>
-  <h4>Audio source in HTML</h4>
-  <audio src="../../assets/sound/hiphop.mp3" controls autoplay loop muted></audio>
-  <br />
+  <!-- Adding Video to Web pages -->
   <h4>Video source in HTML</h4>
-  <video class='hosted-video' poster='../../assets/images/product/mesh_immut.webp'
-    controls preload="metadata">
+  <video class='hosted-video' poster='../../assets/images/product/mesh_immut.webp' controls preload="metadata">
     <source src="../../assets/video/video.mp4" type='video/mp4' />
+  </video>
+  <br /><br />
+
+  <video class="endless-runner" poster="../../assets/images/news/image.webp" controls>
+    <source src="../../assets/video/Endless Runner Game - Personal - Microsoft​ Edge 2022-08-13 16-47-11.mp4" 
+    type="video/mp4">
+    <div id="gameplay">
+      <p>You cannot see this video of gameplay from Creatures of the Night because this browser does not support the 
+        video format</p>
+    </div>
   </video>
 
   <!-- Animating with JQuery -->
   <!-- <div class="ripple"></div> -->
   <br /><br />
 
-  <!-- Embed hosted media -->
-  <h4>Embedding hosted media</h4>
-
-  <iframe src="https://www.veed.io/embed/02b35b96-3dc3-4399-a982-6f375dc6c005" width="568.39" height="307.88"
-    frameborder="0" title="Education Template" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <!-- Adding Audio to web pages -->
+  <h4>Audio source in HTML</h4>
+  <audio controls autoplay loop muted>
+    <source src="../../assets/sound/hiphop.mp3" type="audio/mp3" />
+    <source src="../../assets/sound/hiphop.ogg" type="audio/ogg" />
+    <p>This browser does not support the audio format</p>
+  </audio>
 
 </body>
 

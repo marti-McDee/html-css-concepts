@@ -46,5 +46,13 @@ body {
 
 .hosted-video{
   width:40%;
+}
 
+#gameplay {
+  font-style: italic;
+}
+
+.endless-runner{
+  width: 70rem;
+  height: 50.5rem;
 }
