@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Greet = () => <h1>Hello, world!</h1>
 

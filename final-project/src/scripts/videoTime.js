@@ -1,5 +1,4 @@
 addEventListener('DOMContentLoaded', _ => {
-
   async function addVideoTime() {
     const thumbnailRow = document.getElementsByClassName('thumbnail-row')
 
@@ -12,7 +11,6 @@ addEventListener('DOMContentLoaded', _ => {
 
       thumbnail.appendChild(block)
     }
-
   }
 
   function getRandInt(min, max) {
@@ -27,6 +25,4 @@ addEventListener('DOMContentLoaded', _ => {
   }
 
   addVideoTime()
-
-
 })

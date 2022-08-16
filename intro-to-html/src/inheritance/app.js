@@ -1,9 +1,5 @@
 addEventListener('DOMContentLoaded', _ => {
-
-  
-
   async function addButtons() {
-    
     const collection = document.getElementsByClassName('button-container')
     let i = 0
 
@@ -14,14 +10,7 @@ addEventListener('DOMContentLoaded', _ => {
 
       buttonContainer.appendChild(block)
     }
-
   }
 
-
   addButtons()
-
-
-
-
-
 })

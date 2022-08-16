@@ -1,50 +1,42 @@
-import "./styles.css";
-import { useState } from "react";
-import {
-  animated,
-  useSpring,
-  config,
-  useSpringRef,
-  useChain
-} from "react-spring";
+import './styles.css'
+import { useState } from 'react'
+import { animated, useSpring, config, useSpringRef, useChain } from 'react-spring'
 
 function Checkbox() {
-  const [isChecked, setIsChecked] = useState(false);
-  const checkboxAnimationRef = useSpringRef();
+  const [isChecked, setIsChecked] = useState(false)
+  const checkboxAnimationRef = useSpringRef()
   const checkboxAnimationStyle = useSpring({
-    backgroundColor: isChecked ? "#808" : "#fff",
-    borderColor: isChecked ? "#808" : "#ddd",
+    backgroundColor: isChecked ? '#808' : '#fff',
+    borderColor: isChecked ? '#808' : '#ddd',
     config: config.gentle,
     ref: checkboxAnimationRef
-  });
+  })
 
-  const [checkmarkLength, setCheckmarkLength] = useState(null);
+  const [checkmarkLength, setCheckmarkLength] = useState(null)
 
-  const checkmarkAnimationRef = useSpringRef();
+  const checkmarkAnimationRef = useSpringRef()
   const checkmarkAnimationStyle = useSpring({
     x: isChecked ? 0 : checkmarkLength,
     config: config.gentle,
     ref: checkmarkAnimationRef
-  });
+  })
 
   useChain(
-    isChecked
-      ? [checkboxAnimationRef, checkmarkAnimationRef]
-      : [checkmarkAnimationRef, checkboxAnimationRef],
+    isChecked ? [checkboxAnimationRef, checkmarkAnimationRef] : [checkmarkAnimationRef, checkboxAnimationRef],
     [0, 0.1]
-  );
+  )
 
   return (
     <label>
       <input
         type="checkbox"
         onChange={() => {
-          setIsChecked(!isChecked);
+          setIsChecked(!isChecked)
         }}
       />
       <animated.svg
         style={checkboxAnimationStyle}
-        className={`checkbox ${isChecked ? "checkbox--active" : ""}`}
+        className={`checkbox ${isChecked ? 'checkbox--active' : ''}`}
         // This element is purely decorative so
         // we hide it for screen readers
         aria-hidden="true"
@@ -55,9 +47,9 @@ function Checkbox() {
           d="M1 4.5L5 9L14 1"
           strokeWidth="2"
           stroke="#fff"
-          ref={(ref) => {
+          ref={ref => {
             if (ref) {
-              setCheckmarkLength(ref.getTotalLength());
+              setCheckmarkLength(ref.getTotalLength())
             }
           }}
           strokeDasharray={checkmarkLength}
@@ -66,7 +58,7 @@ function Checkbox() {
       </animated.svg>
       Check me, please
     </label>
-  );
+  )
 }
 
-export default Checkbox;
+export default Checkbox
