@@ -1,0 +1,21 @@
+*,
+body::before,
+body::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0.8rem;
+  padding-top: 8px;
+}
+
+section {
+  margin: 4rem 0rem;
+}

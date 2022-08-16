@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'blueberry-days';
+  src: url('../../fonts/blueberry_days/blueberry_days.otf'),
+    url('../../fonts/blueberry_days/blueberry_days.ttf');
+}
+
+h1 {
+  margin: 2.144rem 0rem;
+  font-family: Impact, Haettenschweiler, fantasy;
+  text-transform: capitalize;
+}
+
+.first-paragraph {
+  margin: 1.6rem 0;
+  font-family: monospace;
+  font-weight: medium;
+  font-style: oblique 60deg;
+  font-stretch: condensed;
+  padding-top: 2em;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.second-paragraph {
+  margin: 1.6rem 0;
+  font-family: monospace;
+  font-weight: bold;
+  font-stretch: condensed;
+  padding-top: 2em;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  word-spacing: 0.05em;
+  letter-spacing: 0.075em;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.third-paragraph {
+  margin: 1.6rem 0;
+  font-family: monospace;
+  font-weight: medium;
+  font-style: oblique 60deg;
+  font-stretch: condensed;
+  padding-top: 2em;
+  text-align: center;
+  vertical-align: super;
+}
+
+.fourth-paragraph {
+  margin: 1.6rem 0;
+  font-family: monospace;
+  font-weight: medium;
+  font-style: oblique 60deg;
+  font-stretch: condensed;
+  padding-top: 2em;
+  text-align: justify;
+}
+
+img {
+  width: 10rem;
+  height: auto;
+}
+
+.text-top {
+  vertical-align: text-top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-middle + span {
+  padding-top: 12em;
+}
+
+.text-bottom {
+  vertical-align: text-bottom;
+}
+
+.indenting-text > .indent {
+  margin: 3rem;
+
+  /* Will indent the margin of the entire body of text (The negative value will offset the margin relative to the 
+   specified parent <body> margin above) */
+  margin-left: -0.5em;
+
+  /* Will indent only the first line of text */
+  text-indent: 2rem;
+}
+
+.indenting-text > .hidden-header {
+  background-image: url('../../assets/images/product/mesh_immut.webp');
+  background-repeat: no-repeat;
+  width: 70rem;
+  height: 60rem;
+
+  /* We still want the heading on the page (for search engines and accessibility) but we push the text off the screen since it will be unreadable if layered over/under the image. */
+  text-indent: -9999px;
+}
+
+.drop-shadow > .s1 {
+  /* text shadow: xPos yPos blurAmount color */
+  text-shadow: 0.1rem 0.1rem 0.2rem #666;
+
+  color: #6c33eb;
+}
+
+.drop-shadow > .s2 {
+  color: #fff;
+  background-color: #ecb2bc;
+  padding: 6rem;
+  text-shadow: -1rem 1rem 0 #f2aabd, -2rem 2rem 0 #ec7b99, -3rem 3rem 0 #dd557a;
+  font-size: 10rem;
+}
+
+.drop-shadow > .s3 {
+  color: #fff;
+  background-color: #f19353;
+  font-size: 8rem;
+  padding: 4rem;
+  text-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.4),
+    0 0.8rem 1.7rem rgba(0, 0, 0, 0.1), 0 1.6rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.first-letter > p::first-letter {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.first-letter > p:nth-of-type(2)::before {
+  content: 'Hey, you!';
+}
+
+.first-letter > p:nth-of-type(3)::after {
+  content: " Something free? Hey, you, are you trying to be mean?
+  If you live with apes man, it's hard to be clean
+  The worms will live in every host
+  It's hard to pick which one they eat the most
+  The horrible people, the horrible people
+  It's as anatomic as the size of your steeple
+  Capitalism has made it this way
+  Old-fashioned fascism will take it away";
+}
+
+.first-letter > p:nth-of-type(3)::first-line {
+  color: blue;
+}

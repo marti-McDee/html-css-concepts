@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="../../src/css/forms.css">
+  <script src="../../src/js/forms.js" defer></script>
+</head>
+
+<body>
+  <form action="action_page.php" method="POST">
+    <fieldset id="personal-info">
+      <legend>Personal Info</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" placeholder="John">
+      <br />
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" placeholder="Doe">
+
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" minlength="6" maxlength="15" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" minlength="10" maxlength="16" id="password" name="password">
+      </div>
+      <div>
+        <label for="paymentType">Select a payment type</label>
+        <select name="paymentType" id="paymentType">
+          <option value="visa">Visa</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+      <div>
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" name="subscribe" id="subscribe">
+      </div>
+      <div>
+        <label for="comment">Leave a comment</label>
+        <br />
+        <textarea class="textarea" name="comments" cols="20" rows="2" placeholder="speak your mind"></textarea>
+      </div>
+      <div>
+        <label for="email-box">Email</label>
+        <input type="email" name="email" class="invalid" id="email-box" autocomplete="off"
+          placeholder="Your email address" required>
+      </div>
+      <div>
+        <input type="reset" name="" id="reset">
+        <input type="submit" name="" id="submit-personal"> 
+      </div>
+      <div>
+    </fieldset>
+
+    <h2>Radio Buttons</h2>
+    <label for="favGenre">What is your fav music genre?</label>
+    <br />
+    <div class="radioButton">
+      <input type="radio" name="favGenre" id="rad1" value="Heavy Metal" title="favGenre" checked />
+      <label for="favGenre">Heavy Metal</label>
+    </div>
+    <div class="radioButton">
+      <input type="radio" name="favGenre" id="rad2" value="Hip Hop" title="favGenre" />
+      <label for="favGenre">Hip Hop</label>
+    </div>
+    <div class="radioButton">
+      <input type="radio" name="favGenre" id="rad3" value="Jazz" title="favGenre" />
+      <label for="favGenre">Jazz</label>
+    </div>
+    <div class="radioButton">
+      <input type="radio" name="favGenre" id="rad4" value="House" title="favGenre" />
+      <label for="favGenre">House</label>
+    </div>
+    </div>
+
+    <!-- Custom Radio Buttons -->
+    <h2>Custom Radio Buttons</h2>
+    <h5>What is your favorite color?</h5>
+    <div class="custom-radio">
+      <label class="radio">
+        <input type="radio" name="myRadioField" value="Blue" id="r1" class="radio__input" title="r1" checked>
+        <div class="radio__radio">
+          <!-- virtual element -->
+        </div>
+        <span>Blue</span>
+      </label>
+    </div>
+    <div class="custom-radio">
+      <label class="radio">
+        <input type="radio" name="myRadioField" value="Green" id="r2" class="radio__input" title="r2">
+        <div class="radio__radio">
+          <!-- virtual element -->
+        </div>
+        <span>Green</span>
+      </label>
+    </div>
+    <div class="custom-radio">
+      <label class="radio">
+        <input type="radio" name="myRadioField" value="Yellow" id="r3" class="radio__input" title="r3">
+        <div class="radio__radio">
+          <!-- virtual element -->
+        </div>
+        <span>Yellow</span>
+      </label>
+    </div>
+
+    <!-- Drop Down List Box -->
+    <div class="drop-down-container">
+      <label for="phone-select">Which phone you own? (Hold down Ctrl key while clicking to select more than one
+        phone)</label>
+      <select name="phone" id="phone-select" size="3" multiple>
+        <option value="galaxy">Samsung Galaxy</option>
+        <option value="iphone">Apple iPhone</option>
+        <option value="schmuck">Nokia Schmuck</option>
+        <option value="shmohawk" selected>HTC Shmohawk</option>
+      </select>
+
+      <!-- File Input Box -->
+      <div class="file-input-container">
+        <label for="user-resume">Upload your professional resume here</label>
+        <input type="file" name="user-resume" id="user-resume">
+        <!-- <input type="submit" value="Upload"> -->
+        <button type="submit">
+          <img id="submit-btn" src="../../assets/images/interface/submitbtn.webp" alt="submit button">
+          <input type="hidden" name="bookmark" value="forms">
+        </button>
+      </div>
+  </form>
+</body>
+
+</html>
