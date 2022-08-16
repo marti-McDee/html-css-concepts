@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'blueberry-days';
-  src: url('../../fonts/blueberry_days/blueberry_days.otf'),
-    url('../../fonts/blueberry_days/blueberry_days.ttf');
+  src: url('../../fonts/blueberry_days/blueberry_days.otf'), url('../../fonts/blueberry_days/blueberry_days.ttf');
 }
 
 h1 {
@@ -118,8 +117,7 @@ img {
   background-color: #f19353;
   font-size: 8rem;
   padding: 4rem;
-  text-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.4),
-    0 0.8rem 1.7rem rgba(0, 0, 0, 0.1), 0 1.6rem 3rem rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.4rem 0.9rem rgba(0, 0, 0, 0.4), 0 0.8rem 1.7rem rgba(0, 0, 0, 0.1), 0 1.6rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .first-letter > p::first-letter {
