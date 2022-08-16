@@ -1,3 +1,5 @@
+/* Forms.js */
+
 const submitPersonal = document.getElementById('submit-personal')
 
 function validate(email) {
