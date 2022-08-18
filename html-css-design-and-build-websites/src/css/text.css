@@ -3,6 +3,10 @@
   src: url('../../fonts/blueberry_days/blueberry_days.otf'), url('../../fonts/blueberry_days/blueberry_days.ttf');
 }
 
+body {
+  font-family: 'blueberry-days', Georgia, 'Times New Roman', serif;
+}
+
 h1 {
   margin: 2.144rem 0rem;
   font-family: Impact, Haettenschweiler, fantasy;
@@ -126,20 +130,107 @@ img {
 }
 
 .first-letter > p:nth-of-type(2)::before {
-  content: 'Hey, you!';
+  content: 'Hey, you! ';
 }
 
 .first-letter > p:nth-of-type(3)::after {
-  content: " Something free? Hey, you, are you trying to be mean?
-  If you live with apes man, it's hard to be clean
-  The worms will live in every host
-  It's hard to pick which one they eat the most
-  The horrible people, the horrible people
-  It's as anatomic as the size of your steeple
-  Capitalism has made it this way
-  Old-fashioned fascism will take it away";
+  content: " Something free? Hey, you! Are you trying to be mean?
+ If you live with apes man, it's hard to be clean The worms will live in every host It's hard to pick which one they eat the most The horrible people, the horrible people It's as anatomic as the size of your steeple Capitalism has made it this way Old-fashioned fascism will take it away";
 }
 
 .first-letter > p:nth-of-type(3)::first-line {
   color: blue;
+}
+
+.styling-links a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(240, 100%, 50%);
+}
+
+.styling-links a:visited {
+  color: hsl(300, 100%, 25%);
+}
+
+/* :focus psuedo-class will take effect when the element is selected by tabbing over it */
+.styling-links a:hover,
+.styling-links a:focus {
+  color: hsla(210, 100%, 56%, 0.4);
+}
+
+.styling-links a:active {
+  color: hsl(0, 100%, 50%);
+}
+
+.styling-links > .btn {
+  padding: 1em 3em;
+  border-radius: 3em;
+  background: #fff;
+  border: 0.1rem solid currentColor;
+  box-shadow: 0 0 2.5rem -1rem currentColor;
+  transition: transform 125ms ease-in;
+  cursor: pointer;
+}
+
+.styling-links > .btn-one {
+  color: red;
+}
+
+.styling-links > .btn-two {
+  color: blue;
+}
+
+.styling-links > .btn-three {
+  color: green;
+}
+
+.styling-links > .btn-four {
+  color: #cfcf30;
+}
+
+.styling-links > .btn:hover,
+.styling-links > .btn:focus {
+  transform: scale(1.2);
+}
+
+@supports selector(:focus-visible) {
+  .styling-links > .btn:focus {
+    transform: none;
+  }
+
+  .styling-links > .btn:hover,
+  .styling-links > .btn:focus-visible {
+    transform: scale(1.2);
+  }
+
+  .styling-links > .btn:focus-visible {
+    /* color of focus-outline will change automatically to contrast background */
+    outline-offset: 0.5rem;
+    transform: scale(1.2);
+  }
+}
+
+.attribute-selectors a[class] {
+  font-size: 1.8rem;
+}
+
+.attribute-selectors > a[href="https://youtube.com"]
+{
+  color: hsl(0, 100%, 50%);
+  text-transform: uppercase;
+}
+
+.attribute-selectors a[class*='cat'][alt^='a cat'] {
+  color: purple;
+  text-decoration: none;
+}
+
+.attribute-selectors a[class~='animal'] {
+  color: hsla(210, 100%, 56%, 0.4);
+  text-transform: uppercase;
+}
+
+.attribute-selectors a[class$='1'] {
+  color: green;
+  text-transform: capitalize;
 }
