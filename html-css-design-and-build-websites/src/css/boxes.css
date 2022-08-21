@@ -1,0 +1,118 @@
+.box-dimensions > h4 {
+  background-color: yellow;
+  width: 35rem;
+  height: 7.5rem;
+}
+
+.box-dimensions > img {
+  width: 30.2rem;
+  height: 20rem;
+  background-color: orange;
+  border: 0.5rem solid black;
+  border-style: dashed;
+  border-bottom-style: double;
+  border-bottom-width: 1rem;
+  border-radius: 1rem;
+
+  padding: 2rem;
+  background-color: yellow;
+
+  /* top right-left bottom */
+  margin: 1rem 1.5rem 2rem; 
+}
+
+.box-dimensions > img:hover{
+  border: 0.5rem solid black;
+  border-bottom-style: double;
+  border-bottom-width: 1rem;
+}
+
+.box-dimensions > .parent {
+  margin: 0 auto;
+  /* padding: 0 50rem; */
+  width: 50em;
+  height: 20em;
+  /* font-size: 5px; */
+  background-color: purple;
+  border: 1rem solid;
+  border-color: green blue;
+  /* padding: 10rem 0 0 10rem; */
+}
+
+.box-dimensions > .parent > .child {
+  background-color: orange;
+  width: 18rem;
+  height: 12rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box-dimensions > .parent > .child:before, .parent > .child:after {
+  content: '';
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: orange;
+  border: 1rem solid black;
+}
+
+/* screen is the default @media query setting */
+ @media screen and (min-width: 100em){
+  .limiting-width {
+    background: red;
+  }
+}
+
+.limiting-width{
+  padding: 1rem;
+}
+
+.limiting-width > h4, .limiting-width > p{
+  width: 40rem;
+  font-size: 90%;
+  line-height: 1.2em;
+  padding: 1rem 0.5rem;
+}
+
+.limiting-width > h4 {
+  color: #008844;
+  border-bottom: 0.1rem outset #0088dd;
+  border-bottom-width: thick;
+}
+
+.limiting-width > p{
+  min-height: 1rem;
+  max-height: 3rem;
+  overflow-y: scroll;
+}
+
+.centering-content > .centered {
+  /* define box properties */
+  background-color: green;
+  border: 0.1rem inset green;
+  width: 40rem;
+  height: 20rem;
+
+  /* center horizontally */
+  margin: 0 auto;
+}
+
+.change-inline-block li{
+  display: inline;
+  margin-right: 1rem;
+}
+
+.change-inline-block li.coming-soon{
+  display: none;
+}
+
+.hiding-boxes li{
+  display: inline;
+  margin-right: 1rem;
+}
+
+.hiding-boxes li.coming-soon{
+  visibility: hidden;
+}
