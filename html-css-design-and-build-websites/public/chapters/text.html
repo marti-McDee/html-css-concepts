@@ -1,153 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 12: Text</title>
+    <link rel="stylesheet" href="../../src/css/main.css" />
+    <link rel="stylesheet" href="../../src/css/text.css" />
+    <script src="../../src/js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chapter 12: Text</title>
-  <link rel="stylesheet" href="../../src/css/main.css" />
-  <link rel="stylesheet" href="../../src/css/text.css" />
-  <script src="../../src/js/main.js" defer></script>
-</head>
-
-<body>
-  <h1>CSS Typography</h1>
-  <p class="first-paragraph">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo ducimus nobis, perspiciatis aliquid sit
-    porro earum facilis, quod sequi quibusdam magni labore doloremque ipsa. Exercitationem sint a minima aliquam?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quis pariatur fugiat laborum nesciunt. Aliquid
-    dolorum provident molestiae quod voluptatem cum, vel nisi voluptates! Odit omnis accusantium possimus totam quod.
-  </p>
-  <p class="second-paragraph">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
-    minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero.
-  </p>
-  <p class="third-paragraph">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
-    minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero.
-  </p>
-  <p class="fourth-paragraph">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
-    minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero. Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Et a natus corporis sunt assumenda perferendis quisquam numquam
-    ipsam, unde iste fugiat odit! Obcaecati veritatis dolor illum quam praesentium architecto iusto? Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Necessitatibus rem, id vero velit ab expedita saepe suscipit quidem hic
-    praesentium libero. Vel natus quasi quia laudantium numquam quod debitis itaque. Lorem ipsum dolor sit amet,
-    consectetur adipisicing elit. Beatae dolorum quaerat sequi neque dolorem? Magnam est vitae voluptatem cumque eaque
-    iusto reprehenderit odit voluptas, tenetur eos quibusdam eum, quo commodi!
-  </p>
-
-  <h3>Vertical Align</h3>
-  <div class="wrapper">
-    <img src="../../assets/images/news/image.webp"
-      alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees" class="text-top" /><span>Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Earum quo illo perspiciatis nesciunt eos unde
-      voluptas, voluptatem, fugit doloremque eum accusantium dolor tenetur delectus voluptate culpa, rerum totam
-      provident! Dolorum.</span>
-  </div>
-  <div class="wrapper">
-    <img src="../../assets/images/news/image.webp"
-      alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees" class="text-middle" /><span>Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus, illum laboriosam magnam placeat
-      expedita quia quam nostrum veritatis facere eligendi, omnis quidem necessitatibus nisi ipsa quisquam iste est
-      quae?</span>
-  </div>
-  <div class="wrapper">
-    <img src="../../assets/images/news/image.webp"
-      alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees" class="text-bottom" /><span>Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptates earum consequuntur repudiandae
-      dolores! Tempore mollitia vel explicabo minus amet pariatur nihil. Reprehenderit accusamus quaerat cupiditate
-      soluta. Vitae, rerum repellendus.</span>
-  </div>
-
-  <!-- Indenting Text -->
-  <section class="indenting-text">
-    <h3>Indenting Text</h3>
-    <p class="indent">
-      Washington — Passports belonging to former President Donald Trump that were taken by the FBI during the search
-      conducted at his South Florida residence last week have been returned to the former president, a law enforcement
-      source confirmed to CBS News. The source said the passports were given back to Trump after they were discovered
-      by a "filter team," a group of federal investigators who screen the materials seized during the execution of a
-      search warrant for privileged or extraneous information. The FBI said in a statement that when executing search
-      warrants, the bureau "follows search and seizure procedures ordered by courts, then returns items that we do not
-      need to be retained for law enforcement purposes."
+  <body>
+    <h1>CSS Typography</h1>
+    <p class="first-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo ducimus nobis, perspiciatis aliquid sit
+      porro earum facilis, quod sequi quibusdam magni labore doloremque ipsa. Exercitationem sint a minima aliquam?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quis pariatur fugiat laborum nesciunt. Aliquid
+      dolorum provident molestiae quod voluptatem cum, vel nisi voluptates! Odit omnis accusantium possimus totam quod.
+    </p>
+    <p class="second-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
+      minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero.
+    </p>
+    <p class="third-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
+      minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero.
+    </p>
+    <p class="fourth-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempore, illo iure velit placeat eaque veniam
+      minima, inventore consequuntur a autem? Quidem quae neque ipsa ullam ratione ducimus obcaecati libero. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Et a natus corporis sunt assumenda perferendis quisquam numquam
+      ipsam, unde iste fugiat odit! Obcaecati veritatis dolor illum quam praesentium architecto iusto? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Necessitatibus rem, id vero velit ab expedita saepe suscipit quidem hic
+      praesentium libero. Vel natus quasi quia laudantium numquam quod debitis itaque. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Beatae dolorum quaerat sequi neque dolorem? Magnam est vitae voluptatem cumque eaque
+      iusto reprehenderit odit voluptas, tenetur eos quibusdam eum, quo commodi!
     </p>
 
-    <h3 class="hidden-header">Meshuggah's latest album is a real banger!</h3>
-  </section>
-
-  <!-- Drop Shadow -->
-  <section class="drop-shadow">
-    <h3>Drop Shadow</h3>
-    <p>The text-shadow property can be used to create some remarkable effects with little effort.</p>
-    <h2 class="s1">Shadow One</h2>
-    <h2 class="s2">Shadow Two</h2>
-    <h2 class="s3">Shadow Three</h2>
-  </section>
-
-  <!-- First Letter or Line -->
-  <section class="first-letter">
-    <h3>First Letter or Line</h3>
-    <p>The first letter is bold and red</p>
-    <p>What do you see?</p>
-    <p>Something beautiful?</p>
-  </section>
-
-  <!-- Styling Links -->
-  <section class="styling-links">
-    <h3>Styling Links</h3>
-    <p>When psuedo-classes are used, they should appear in the following order:</p>
-    <ul>
-      <li>:link</li>
-      <li>:visited</li>
-      <li>:hover</li>
-      <li>:focus</li>
-      <li>:active</li>
-    </ul>
-    <br />
-    <p>Welcome to my page about
-      <a href="https://inktank.fi/the-17-most-wonderfully-weird-websites-on-the-internet/" target="_blank">cool web
-        links</a>
-    </p>
-    <p>Actually, that isn't a good search phrase</p>
-    <p>Let's search for <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_14.html" target="_self">hypertext links</a>
-      instead</p>
-    <p>I created page one with info about <a href="https://www.musiciansfriend.com/guitars" target="_self">guitars</a>
-    </p>
-    <p>I created page two with info about <a href="https://www.javascript.com/" target="_self">JavaScript</a></p>
-    <br />
-    <button class="btn btn-one">One</button>
-    <button class="btn btn-two">Two</button>
-    <button class="btn btn-three">Three</button>
-    <button class="btn btn-four">Four</button>
-  </section>
-
-  <!-- Attribute Selectors -->
-  <section class="attribute-selectors">
-    <h3>Attribute Selectors</h3>
-    <div><a href="https://youtube.com">Click here for YouTube</a></div>
-    <div>
-      <a class="cat-link-1"
-        href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats">Click here for cats
-      </a>
+    <h3>Vertical Align</h3>
+    <div class="wrapper">
+      <img
+        src="../../assets/images/news/image.webp"
+        alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees"
+        class="text-top"
+      /><span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quo illo perspiciatis nesciunt eos unde
+        voluptas, voluptatem, fugit doloremque eum accusantium dolor tenetur delectus voluptate culpa, rerum totam
+        provident! Dolorum.</span
+      >
     </div>
-    <div>
-      <a class="cat" href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
-        alt="a cat link">More cats
-      </a>
+    <div class="wrapper">
+      <img
+        src="../../assets/images/news/image.webp"
+        alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees"
+        class="text-middle"
+      /><span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus, illum laboriosam magnam placeat
+        expedita quia quam nostrum veritatis facere eligendi, omnis quidem necessitatibus nisi ipsa quisquam iste est
+        quae?</span
+      >
     </div>
-    <div>
-      <a class="cat-link" href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
-        alt="another cat link">Even more cats
-      </a>
+    <div class="wrapper">
+      <img
+        src="../../assets/images/news/image.webp"
+        alt="a sunset with a pinkish hue occurs over landscape of mushroom-top trees"
+        class="text-bottom"
+      /><span
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptates earum consequuntur repudiandae
+        dolores! Tempore mollitia vel explicabo minus amet pariatur nihil. Reprehenderit accusamus quaerat cupiditate
+        soluta. Vitae, rerum repellendus.</span
+      >
     </div>
-    <div>
-      <a class="cat animal"
-        href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats">This is also cats
-      </a>
-    </div>
-  </section>
-</body>
 
+    <!-- Indenting Text -->
+    <section class="indenting-text">
+      <h3>Indenting Text</h3>
+      <p class="indent">
+        Washington — Passports belonging to former President Donald Trump that were taken by the FBI during the search
+        conducted at his South Florida residence last week have been returned to the former president, a law enforcement
+        source confirmed to CBS News. The source said the passports were given back to Trump after they were discovered
+        by a "filter team," a group of federal investigators who screen the materials seized during the execution of a
+        search warrant for privileged or extraneous information. The FBI said in a statement that when executing search
+        warrants, the bureau "follows search and seizure procedures ordered by courts, then returns items that we do not
+        need to be retained for law enforcement purposes."
+      </p>
+
+      <h3 class="hidden-header">Meshuggah's latest album is a real banger!</h3>
+    </section>
+
+    <!-- Drop Shadow -->
+    <section class="drop-shadow">
+      <h3>Drop Shadow</h3>
+      <p>The text-shadow property can be used to create some remarkable effects with little effort.</p>
+      <h2 class="s1">Shadow One</h2>
+      <h2 class="s2">Shadow Two</h2>
+      <h2 class="s3">Shadow Three</h2>
+    </section>
+
+    <!-- First Letter or Line -->
+    <section class="first-letter">
+      <h3>First Letter or Line</h3>
+      <p>The first letter is bold and red</p>
+      <p>What do you see?</p>
+      <p>Something beautiful?</p>
+    </section>
+
+    <!-- Styling Links -->
+    <section class="styling-links">
+      <h3>Styling Links</h3>
+      <p>When psuedo-classes are used, they should appear in the following order:</p>
+      <ul>
+        <li>:link</li>
+        <li>:visited</li>
+        <li>:hover</li>
+        <li>:focus</li>
+        <li>:active</li>
+      </ul>
+      <br />
+      <p>
+        Welcome to my page about
+        <a href="https://inktank.fi/the-17-most-wonderfully-weird-websites-on-the-internet/" target="_blank"
+          >cool web links</a
+        >
+      </p>
+      <p>Actually, that isn't a good search phrase</p>
+      <p>
+        Let's search for
+        <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_14.html" target="_self">hypertext links</a> instead
+      </p>
+      <p>
+        I created page one with info about <a href="https://www.musiciansfriend.com/guitars" target="_self">guitars</a>
+      </p>
+      <p>I created page two with info about <a href="https://www.javascript.com/" target="_self">JavaScript</a></p>
+      <br />
+      <button class="btn btn-one">One</button>
+      <button class="btn btn-two">Two</button>
+      <button class="btn btn-three">Three</button>
+      <button class="btn btn-four">Four</button>
+    </section>
+
+    <!-- Attribute Selectors -->
+    <section class="attribute-selectors">
+      <h3>Attribute Selectors</h3>
+      <div><a href="https://youtube.com">Click here for YouTube</a></div>
+      <div>
+        <a class="cat-link-1" href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
+          >Click here for cats
+        </a>
+      </div>
+      <div>
+        <a
+          class="cat"
+          href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
+          alt="a cat link"
+          >More cats
+        </a>
+      </div>
+      <div>
+        <a
+          class="cat-link"
+          href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
+          alt="another cat link"
+          >Even more cats
+        </a>
+      </div>
+      <div>
+        <a class="cat animal" href="https://www.purina.co.uk/articles/cats/behaviour/common-questions/videos-for-cats"
+          >This is also cats
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
