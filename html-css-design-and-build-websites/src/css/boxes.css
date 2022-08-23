@@ -7,13 +7,13 @@ body {
   background-color: #fff;
 }
 
-.box-dimensions>h4 {
+.box-dimensions > h4 {
   background-color: yellow;
   width: 35rem;
   height: 7.5rem;
 }
 
-.box-dimensions>img {
+.box-dimensions > img {
   width: 30.2rem;
   height: 20rem;
   background-color: orange;
@@ -30,13 +30,13 @@ body {
   margin: 1rem 1.5rem 2rem;
 }
 
-.box-dimensions>img:hover {
+.box-dimensions > img:hover {
   border: 0.5rem solid black;
   border-bottom-style: double;
   border-bottom-width: 1rem;
 }
 
-.box-dimensions>.parent {
+.box-dimensions > .parent {
   margin: 0 auto;
   /* padding: 0 50rem; */
   width: 50em;
@@ -48,7 +48,7 @@ body {
   /* padding: 10rem 0 0 10rem; */
 }
 
-.box-dimensions>.parent>.child {
+.box-dimensions > .parent > .child {
   background-color: orange;
   width: 18rem;
   height: 12rem;
@@ -58,8 +58,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.box-dimensions>.parent>.child:before,
-.parent>.child:after {
+.box-dimensions > .parent > .child:before,
+.parent > .child:after {
   content: '';
   position: absolute;
   width: auto;
@@ -79,27 +79,27 @@ body {
   padding: 1rem;
 }
 
-.limiting-width>h4,
-.limiting-width>p {
+.limiting-width > h4,
+.limiting-width > p {
   width: 40rem;
   font-size: 90%;
   line-height: 1.2em;
   padding: 1rem 0.5rem;
 }
 
-.limiting-width>h4 {
+.limiting-width > h4 {
   color: #008844;
   border-bottom: 0.1rem outset #0088dd;
   border-bottom-width: thick;
 }
 
-.limiting-width>p {
+.limiting-width > p {
   min-height: 1rem;
   max-height: 3rem;
   overflow-y: scroll;
 }
 
-.centering-content>.centered {
+.centering-content > .centered {
   /* define box properties */
   background-color: green;
   border: 0.1rem inset green;
@@ -128,28 +128,28 @@ body {
   visibility: hidden;
 }
 
-.border-images>.flowers {
+.border-images > .flowers {
   width: 40rem;
   margin-right: 1.2rem;
 }
 
-.border-images>#flowers-1 {
+.border-images > #flowers-1 {
   border-width: 0.9rem;
   border-style: inset groove;
   border-color: #ff0011;
 }
 
-.border-images>#flowers-2 {
+.border-images > #flowers-2 {
   border: 0.5rem dotted darkviolet;
 }
 
-.border-images>#flowers-3 {
+.border-images > #flowers-3 {
   border-width: 0.5rem;
   border-style: solid;
   border-image: url('../../assets/images/Sticker_Mushroom_-_Mario_Party_Superstars.webp') 25% round;
 }
 
-.box-shadows>.box {
+.box-shadows > .box {
   display: inline-block;
   width: 20rem;
   height: 10rem;
@@ -157,49 +157,40 @@ body {
   margin: 3em;
 }
 
-.box-shadows>#ex1 {
+.box-shadows > #ex1 {
   box-shadow: 2rem 2rem;
 }
 
-.box-shadows>#ex2 {
-  box-shadow:
-    inset 2rem 2rem 1rem -2rem,
-    inset -2rem -2rem 1rem -2rem;
+.box-shadows > #ex2 {
+  box-shadow: inset 2rem 2rem 1rem -2rem, inset -2rem -2rem 1rem -2rem;
 }
 
-.box-shadows>#ex3 {
+.box-shadows > #ex3 {
   box-shadow: -1rem -1rem 2rem hsla(0, 0%, 0%, 0.2);
 }
 
-.box-shadows>#ex4 {
+.box-shadows > #ex4 {
   box-shadow: -1rem -1rem 2rem 1rem hsla(0, 0%, 0%, 0.2);
 }
 
-.box-shadows>#ex5 {
+.box-shadows > #ex5 {
   box-shadow: -1rem -1rem 1rem -1rem hsla(0, 0%, 0%, 0.2);
-
 }
 
-.box-shadows>#ex6 {
-  box-shadow:
-    inset 0 0 0 1rem rgb(11, 141, 219),
-    inset 0 0 0 2rem #ffc107,
-    inset 0 0 0 3rem rgb(68, 178, 105);
+.box-shadows > #ex6 {
+  box-shadow: inset 0 0 0 1rem rgb(11, 141, 219), inset 0 0 0 2rem #ffc107, inset 0 0 0 3rem rgb(68, 178, 105);
 }
 
-.box-shadows>#ex7 {
+.box-shadows > #ex7 {
   box-shadow: 0rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.box-shadows>#ex8 {
+.box-shadows > #ex8 {
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
 }
 
-.box-shadows>#ex9 {
-  box-shadow:
-    0 1rem 0 -0.5rem rgb(11, 141, 219),
-    0 2rem 0 -1rem rgb(184, 65, 97),
-    0 3rem 0 -1.5rem rgb(230, 211, 40);
+.box-shadows > #ex9 {
+  box-shadow: 0 1rem 0 -0.5rem rgb(11, 141, 219), 0 2rem 0 -1rem rgb(184, 65, 97), 0 3rem 0 -1.5rem rgb(230, 211, 40);
 }
 
 .rounded-corners > div {
@@ -218,14 +209,14 @@ body {
   border-bottom-right-radius: 1rem;
 }
 
-.rounded-corners p[title="rounded-corners"]{
+.rounded-corners p[title='rounded-corners'] {
   position: relative;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.elliptical-shapes > .elliptical{
+.elliptical-shapes > .elliptical {
   width: 20rem;
   height: 20rem;
   margin: 10.5rem;
@@ -235,40 +226,37 @@ body {
   display: inline-block;
 }
 
-.elliptical-shapes > #elliptical-1{
+.elliptical-shapes > #elliptical-1 {
   /* The values before the slash represent the horizontal radii for the top-left, top-right, bottom-right, and bottom-left corners, respectively. The values after the slash represent the vertical radii for those same corners, in that order. */
-  border-radius: 
-    40rem 80rem /
-    60rem 30rem;
-
+  border-radius: 40rem 80rem / 60rem 30rem;
 }
 
-.elliptical-shapes > #elliptical-2{
-  border-radius:  60rem 80rem;
+.elliptical-shapes > #elliptical-2 {
+  border-radius: 60rem 80rem;
 }
 
-.elliptical-shapes > #elliptical-3{
+.elliptical-shapes > #elliptical-3 {
   border-radius: 80rem 60rem;
 }
 
-.elliptical-shapes > #elliptical-4{
+.elliptical-shapes > #elliptical-4 {
   border-top-left-radius: 80rem 50rem;
 }
 
-.elliptical-shapes > #elliptical-5{
+.elliptical-shapes > #elliptical-5 {
   /* border-radius same as height of square will create a circle */
   border-radius: 20rem;
 }
 
-.elliptical-shapes > #elliptical-6{
+.elliptical-shapes > #elliptical-6 {
   border-radius: 20rem 0;
 }
 
-.elliptical-shapes > #elliptical-7{
+.elliptical-shapes > #elliptical-7 {
   border-radius: 40rem 10rem / 0 80rem;
 }
 
-.elliptical-shapes > #elliptical-8{
+.elliptical-shapes > #elliptical-8 {
   background-color: blue;
   height: 13rem;
   border-radius: 50%;
