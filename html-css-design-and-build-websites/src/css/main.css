@@ -22,4 +22,8 @@ section {
 
 h3 {
   margin-bottom: 1rem;
+  font-size: 2.4rem;
+  color: #ff0303;
+  width: 25%;
+  border-bottom: 0.1rem solid #010017;
 }
