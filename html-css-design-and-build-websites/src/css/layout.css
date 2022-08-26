@@ -1,0 +1,91 @@
+h1 {
+  margin-bottom: 1rem;
+}
+
+.normal-flow>button {
+  display: block;
+}
+
+.normal-flow>p {
+  display: inline;
+}
+
+.normal-flow>h1 {
+  background-color: #808088;
+  padding: 2rem;
+}
+
+.normal-flow>p {
+  /* position: static; */
+  width: 45rem;
+}
+
+.relative-positioning>.container {
+  border: 0.1rem solid black;
+  /* overflow: hidden; */
+  height: 45rem;
+}
+
+.relative-positioning .box {
+  width: 15rem;
+  height: 15rem;
+  display: inline-block;
+}
+
+.relative-positioning .purple {
+  background-color: purple;
+  position: relative;
+  left: 8rem;
+  z-index: -2;
+}
+
+.relative-positioning .yellow {
+  background-color: yellow;
+  left: 20rem;
+  position: relative;
+  z-index: 1;
+}
+
+.relative-positioning .red {
+  background-color: red;
+  position: relative;
+  top: 2.5rem;
+  z-index: -3;
+}
+
+.relative-positioning .orange {
+  background-color: orange;
+  position: sticky;
+  left: 10rem;
+}
+
+.relative-positioning>p {
+  position: relative;
+  top: 1rem;
+  left: 10rem;
+}
+
+.absolute-positioning>h1 {
+  position: absolute;
+  top: 106rem;
+  left: 2rem;
+}
+
+.absolute-positioning>p {
+  position: absolute;
+  top: 109rem;
+  left: 2.5rem;
+}
+
+.fixed-positioning>h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #efefef;
+  z-index: 9999;
+}
+
+.fixed-positioning>p {
+  margin-top: 2rem;
+}
