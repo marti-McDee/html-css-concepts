@@ -1,101 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../../src/css/main.css" />
+    <link rel="stylesheet" href="../../src/css/layout.css" />
+    <script src="../../src/js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Layout</title>
-  <link rel="stylesheet" href="../../src/css/main.css" />
-  <link rel="stylesheet" href="../../src/css/layout.css" />
-  <script src="../../src/js/main.js" defer></script>
-</head>
+  <body>
+    <!-- Normal Flow -->
+    <section class="normal-flow">
+      <h3>Normal Flow</h3>
+      <button>Home</button>
+      <button>Contact</button>
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+      <h1>Evolution of the Bicycle</h1>
+      <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+    </section>
 
-<body>
-  <!-- Normal Flow -->
-  <section class="normal-flow">
-    <h3>Normal Flow</h3>
-    <button>Home</button>
-    <button>Contact</button>
-    <p>First Paragraph</p>
-    <p>Second Paragraph</p>
-    <h1>Evolution of the Bicycle</h1>
-    <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
-  </section>
+    <!-- Relative Positioning -->
+    <section class="relative-positioning">
+      <h3>Relative Positioning</h3>
+      <div class="container">
+        <div class="box yellow"></div>
+        <div class="box purple"></div>
+        <div class="box red"></div>
+      </div>
+      <div class="box orange"></div>
+      <h1>Evolution of the Bicycle</h1>
+      <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+    </section>
 
-  <!-- Relative Positioning -->
-  <section class="relative-positioning">
-    <h3>Relative Positioning</h3>
-    <div class="container">
-      <div class="box yellow"></div>
-      <div class="box purple"></div>
-      <div class="box red"></div>
-    </div>
-    <div class="box orange"></div>
-    <h1>Evolution of the Bicycle</h1>
-    <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
-  </section>
+    <!-- Absolute Positioning -->
+    <section class="absolute-positioning">
+      <h3>Absolute Positioning</h3>
+      <h1>Evolution of the Bicycle</h1>
+      <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
+      <br /><br />
+    </section>
 
-  <!-- Absolute Positioning -->
-  <section class="absolute-positioning">
-    <h3>Absolute Positioning</h3>
-    <h1>Evolution of the Bicycle</h1>
-    <p>In 1817 Baron Von Drais invented a walking machine that would help him get around the royal gardens faster.</p>
-    <br /><br />
-  </section>
+    <!-- Fixed Positioning -->
+    <section class="fixed-positioning">
+      <h3 id="fixed-positioning">Fixed Positioning</h3>
+      <h1>Layout and Positioning</h1>
+      <p>The headline at the top of the page moves with the page as the user scrolls up/down.</p>
+    </section>
 
-  <!-- Fixed Positioning -->
-  <section class="fixed-positioning">
-    <h3 id="fixed-positioning">Fixed Positioning</h3>
-    <h1>Layout and Positioning</h1>
-    <p>The headline at the top of the page moves with the page as the user scrolls up/down.</p>
-  </section>
+    <!-- Overlapping Elements -->
+    <section class="overlapping-elements">
+      <h3>Overlapping Elements</h3>
+      <div id="grid-container">
+        <div class="grid-item"><span>1</span></div>
+        <div class="grid-item"><span>2</span></div>
+        <div class="grid-item"><span>3</span></div>
+      </div>
+    </section>
 
-  <!-- Overlapping Elements -->
-  <section class="overlapping-elements">
-    <h3>Overlapping Elements</h3>
-  </section>
+    <!-- Floating Elements -->
+    <section class="floating-elements">
+      <h3>Floating Elements</h3>
+      <div class="block left">Float</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus odio rerum quaerat culpa
+        necessitatibus fuga cupiditate vero voluptatem modi.
+      </p>
+      <p>
+        Cum iste laudantium, quae et esse dolor, eveniet nisi eos pariatur nobis ab iure voluptates omnis? Id quo
+        repellat illo!
+      </p>
+      <p>
+        Placeat eos ex dignissimos, nam neque sunt illo ratione natus? Ducimus iure facilis perferendis. Cupiditate
+        beatae distinctio rem laudantium nulla.
+      </p>
+      <div class="block right">Float</div>
+      <p>
+        Minima, repudiandae! Corporis laboriosam modi dolorem, voluptate possimus quibusdam similique. Quos dolor
+        impedit excepturi explicabo optio quidem deserunt accusantium totam.
+      </p>
+      <p>
+        Quis soluta dolorum temporibus accusantium ipsam, aut commodi minima voluptas architecto enim, eveniet mollitia
+        sunt ea ipsum numquam reiciendis aliquam.
+      </p>
+    </section>
 
-  <!-- Floating Elements -->
-  <section class="floating-elements">
-    <h3>Floating Elements</h3>
-  </section>
+    <!-- Using Float to Place Elements Side-by-side -->
+    <section class="using-float">
+      <h3>Using Float to Place Elements Side-by-side</h3>
+      <h1>Evolution of the Bicycle</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in perferendis, harum dignissimos tempore
+        quas doloribus voluptates incidunt maxime voluptatum!
+      </p>
+      <p>Some more text aboot bikes</p>
+    </section>
 
-  <!-- Using Float to Place Elements Side-by-side -->
-  <section class="using-float">
-    <h3>Using Float to Place Elements Side-by-side</h3>
-  </section>
+    <!-- Clearing Floats -->
+    <section class="clearing-floats">
+      <h3>Clearing Floats</h3>
+    </section>
 
-  <!-- Clearing Floats -->
-  <section class="clearing-floats">
-    <h3>Clearing Floats</h3>
-  </section>
+    <!-- Parents of Floated Elements -->
+    <section class="parents-of-floated-elements">
+      <h3>Parents of Floated Elements</h3>
+      <div>
+        <p>In 1817, some guy did something.</p>
+        <p>The device, known as the "hobby horse" was created.</p>
+        <p>But it both sucked and blew!</p>
+        <p class="clear">Then in 1865, someone else said "I could do that better."</p>
+        <p>In 1870, the first all-metal machine appears.</p>
+        <p>Solid rubber tires were invented and they were much better than that other shite.</p>
+      </div>
+    </section>
 
-  <!-- Parents of Floated Elements -->
-  <section class="parents-of-floated-elements">
-    <h3>Parents of Floated Elements</h3>
-  </section>
+    <!-- Creating Multi-column Layouts with Floats -->
+    <section class="creating-multi-column-layouts">
+      <h3>Creating Multi-column Layouts with Floats</h3>
+      <h1>The Evolution of the Bicycle</h1>
+      <div class="col1">
+        <h4>The First Bicycle</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, ab?</p>
+      </div>
+      <div class="col2">
+        <h4>Bicycle Timeline</h4>
+      </div>
+      <div class="col3">
+        <h4>Further Innovations</h4>
+      </div>
+    </section>
 
-  <!-- Creating Multi-column Layouts with Floats -->
-  <section class="creating-multi-column-layouts">
-    <h3>Creating Multi-column Layouts with Floats</h3>
-  </section>
+    <!-- A Fixed Width Layout -->
+    <section class="fixed-width-layout">
+      <h3>A Fixed Width Layout</h3>
+      <div class="view">
+        <div id="header">
+          <h1>Logo</h1>
+          <div id="nav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="content">
+          <div id="feature">
+            <p>Feature</p>
+          </div>
+          <div class="article column1">
+            <p>Column One</p>
+          </div>
+          <div class="article column2">
+            <p>Column Two</p>
+          </div>
+          <div class="article column3">
+            <p>Column Three</p>
+          </div>
+        </div>
+        <div id="footer">
+          <p>© Copyright 2011</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- A Fixed Width Layout -->
-  <section class="fixed-width-layout">
-    <h3>A Fixed Width Layout</h3>
-  </section>
+    <!-- A Liquid Layout -->
+    <section class="liquid-layout">
+      <h3>A Liquid Layout</h3>
+      <div id="header">
+        <h1>Logo</h1>
+        <div id="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <div id="feature">
+          <p>Feature</p>
+        </div>
+        <div class="article column1">
+          <p>Column One</p>
+        </div>
+        <div class="article column2">
+          <p>Column Two</p>
+        </div>
+        <div class="article column3">
+          <p>Column Three</p>
+        </div>
+      </div>
+      <div id="footer">
+        <p>© Copyright 2011</p>
+      </div>
+    </section>
 
-  <!-- A Liquid Layout -->
-  <section class="liquid-layout">
-    <h3>A Liquid Layout</h3>
-  </section>
-
-  <!-- Multiple Style Sheets -->
-  <section class="multiple-style-sheets">
-    <h3>Multiple Style Sheets</h3>
-  </section>
-
-</body>
-
+    <!-- Multiple Style Sheets -->
+    <section class="multiple-style-sheets">
+      <h3>Multiple Style Sheets</h3>
+    </section>
+  </body>
 </html>

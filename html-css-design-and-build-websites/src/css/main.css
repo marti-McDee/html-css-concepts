@@ -16,7 +16,7 @@ body {
   padding-top: 8px;
 }
 
-section {
+section > h3 {
   margin: 4rem 0rem;
 }
 

@@ -2,25 +2,25 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.normal-flow>button {
+.normal-flow > button {
   display: block;
 }
 
-.normal-flow>p {
+.normal-flow > p {
   display: inline;
 }
 
-.normal-flow>h1 {
+.normal-flow > h1 {
   background-color: #808088;
   padding: 2rem;
 }
 
-.normal-flow>p {
+.normal-flow > p {
   /* position: static; */
   width: 45rem;
 }
 
-.relative-positioning>.container {
+.relative-positioning > .container {
   border: 0.1rem solid black;
   /* overflow: hidden; */
   height: 45rem;
@@ -59,25 +59,25 @@ h1 {
   left: 10rem;
 }
 
-.relative-positioning>p {
+.relative-positioning > p {
   position: relative;
   top: 1rem;
   left: 10rem;
 }
 
-.absolute-positioning>h1 {
+.absolute-positioning > h1 {
   position: absolute;
   top: 106rem;
   left: 2rem;
 }
 
-.absolute-positioning>p {
+.absolute-positioning > p {
   position: absolute;
   top: 109rem;
   left: 2.5rem;
 }
 
-.fixed-positioning>h1 {
+.fixed-positioning > h1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,6 +86,178 @@ h1 {
   z-index: 9999;
 }
 
-.fixed-positioning>p {
+.fixed-positioning > p {
   margin-top: 2rem;
+}
+
+.overlapping-elements > #grid-container {
+  width: 60rem;
+  height: 60rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.overlapping-elements .grid-item {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+}
+
+.overlapping-elements .grid-item > span {
+  margin: auto;
+  font-size: 3.2rem;
+}
+
+.overlapping-elements .grid-item:nth-of-type(1) {
+  background: #e7651e;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  position: relative;
+  left: 5rem;
+  bottom: 3rem;
+}
+
+.overlapping-elements .grid-item:nth-of-type(2) {
+  background: #f765fe;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  /* z-index: 99; */
+  /* transform: translate(-5rem, 5rem); */
+  position: relative;
+  left: -5rem;
+  bottom: -5rem;
+}
+
+.overlapping-elements .grid-item:nth-of-type(3) {
+  background: #ae34ce;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  /* align-self: center; */
+  /* justify-self: center; */
+  /* place-self: center; */
+  position: relative;
+}
+
+.floating-elements > .block {
+  width: 30vw;
+  height: 30vw;
+  font-size: 130%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin: 0 0 1rem 1rem;
+  padding: 1rem;
+  border-top: 0.1rem solid #665544;
+  border-bottom: 0.1rem solid #665544;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.floating-elements > .left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.floating-elements > .right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.using-float > p {
+  width: 23rem;
+  float: left;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #efefef;
+}
+
+.clearing-floats > h3 {
+  clear: both;
+}
+
+.parents-of-floated-elements > div {
+  border: 0.1rem solid #665544;
+  overflow: auto;
+  width: 100%;
+}
+
+.parents-of-floated-elements p {
+  width: 23rem;
+  float: left;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #efefef;
+}
+
+.parents-of-floated-elements .clear {
+  clear: left;
+}
+
+.creating-multi-column-layouts {
+  clear: both;
+}
+
+.creating-multi-column-layouts .col1 {
+  float: left;
+  width: 62rem;
+  margin: 1rem;
+}
+
+.creating-multi-column-layouts > .col2 {
+  float: left;
+  width: 30rem;
+  margin: 1rem;
+}
+
+.creating-multi-column-layouts > .col3 {
+  float: left;
+  width: 30rem;
+  margin: 1rem;
+}
+
+.fixed-width-layout > .view {
+  width: 96rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fixed-width-layout #content {
+  overflow: auto;
+  height: 100%;
+}
+
+.fixed-width-layout #nav,
+.fixed-width-layout #feature,
+.fixed-width-layout #footer {
+  background-color: #efefef;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.fixed-width-layout .column1,
+.fixed-width-layout .column2,
+.fixed-width-layout .column3 {
+  background-color: #efefef;
+  width: 30rem;
+  float: left;
+  margin: 1rem;
+}
+
+.fixed-width-layout li {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.fixed-width-layout h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
