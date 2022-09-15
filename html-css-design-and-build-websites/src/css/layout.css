@@ -1,3 +1,5 @@
+@import url('main.css');
+
 h1 {
   margin-bottom: 1rem;
 }
@@ -253,6 +255,59 @@ h1 {
 }
 
 .fixed-width-layout h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.liquid-layout > .view {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.liquid-layout #content {
+  overflow: auto;
+}
+
+.liquid-layout #nav,
+.liquid-layout #feature,
+.liquid-layout #footer {
+  background-color: #efefef;
+  padding: 1%;
+  margin: 1%;
+}
+
+.liquid-layout .column1,
+.liquid-layout .column2,
+.liquid-layout .column3 {
+  background-color: #efefef;
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+}
+
+.liquid-layout .column3{
+  margin-right: 0%;
+}
+
+.liquid-layout li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.liquid-layout #feature,
+.liquid-layout .article{
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
+}
+
+.liquid-layout h1 {
   display: block;
   font-size: 2em;
   margin-block-start: 0.67em;
