@@ -130,6 +130,51 @@
         </button>
       </div>
   </form>
+
+    <!-- Form Validation -->
+    <section class="form-validation">
+      <h3>Form Validation</h3>
+     <form action="http://example.com/login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required /><br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" required />
+      <input type="submit" value="Submit">
+     </form>
+    </section>
+
+    <!-- Date Input -->
+    <section class="date-input">
+      <h3>Date Input</h3>
+      <form action="http://www.example.com/bookings" method="post">
+        <label for="username">Departure Date:</label>
+        <input type="date" name="depart">
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Email & URL Inputs -->
+    <section class="email-url-input">
+      <h3>Email & URL Inputs</h3>
+      <form action="http://www.example.com/subscribe.php">
+        <p>Please enter your fucking email address:</p>
+        <input type="email" name="email">
+        <input type="submit" value="Submit">
+        <p>Please enter the address for your dumb website:</p>
+        <input type="url" name="website">
+        <input type="submit" name="Submit">
+      </form>
+    </section>
+
+    <!-- Search Input -->
+    <section class="search-input">
+      <h3>Search Input</h3>
+      <form action="http://www.example.org/search.php">
+        <label for="search">Search:</label>
+        <input type="search" name="search" placeholder="Enter search term">
+        <input type="submit" value="Search">
+      </form>
+    </section>
 </body>
 
 </html>
