@@ -1,0 +1,16 @@
+@import url('../css/main.css');
+
+.grouping-block img{
+  width: 15rem;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.grouping-inline .gallery {
+  text-transform: uppercase;
+}
+
+.iframes > .map{
+  width: 450px;
+  height: 350px;
+}
