@@ -1,5 +1,5 @@
 function scrollToBottom() {
-  window.scrollTo(0, document.body.scrollHeight * 1)
+  window.scrollTo(0, document.body.scrollHeight)
 }
 
 history.scrollRestoration = 'manual'

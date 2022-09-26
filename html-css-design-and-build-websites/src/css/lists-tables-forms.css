@@ -1,2 +1,37 @@
 @import url('../css/main.css');
 
+.bullet-point-styles ol{
+  list-style-type: lower-roman;
+}
+
+.bullet-point-styles ul{
+  list-style-type: square;
+}
+
+.images-for-bullets li{
+  margin-top: 1rem;
+}
+
+.images-for-bullets ul li::before{
+  content: '';
+  display: inline-block;
+  height: 2.5rem;
+  width: 3.5rem;
+  background-image: url('../../assets/images/star.jfif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -2.2rem;
+}
+
+.positioning-marker h4:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+.positioning-marker ul{
+  width: 25rem;
+}
+
+.positioning-marker li{
+  margin: 1rem;
+}
+
