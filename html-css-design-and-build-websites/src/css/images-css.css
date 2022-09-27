@@ -1,2 +1,16 @@
 @import url('../css/main.css');
 
+.controlling-size img.large {
+  width: 30rem;
+  height: 30rem;
+}
+
+.controlling-size img.medium {
+  width: 15rem;
+  height: 15rem;
+}
+
+.controlling-size img.small {
+  width: 5rem;
+  height: 5rem;
+}
