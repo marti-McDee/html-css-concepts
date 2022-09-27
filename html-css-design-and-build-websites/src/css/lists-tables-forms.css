@@ -1,18 +1,18 @@
 @import url('../css/main.css');
 
-.bullet-point-styles ol{
+.bullet-point-styles ol {
   list-style-type: lower-roman;
 }
 
-.bullet-point-styles ul{
+.bullet-point-styles ul {
   list-style-type: square;
 }
 
-.images-for-bullets li{
+.images-for-bullets li {
   margin-top: 1rem;
 }
 
-.images-for-bullets ul li::before{
+.images-for-bullets ul li::before {
   content: '';
   display: inline-block;
   height: 2.5rem;
@@ -27,11 +27,188 @@
   margin-top: 1rem;
 }
 
-.positioning-marker ul{
+.positioning-marker ul {
   width: 25rem;
 }
 
-.positioning-marker li{
+.positioning-marker li {
   margin: 1rem;
 }
 
+.positioning-marker .illuminations {
+  list-style-position: outside;
+}
+
+.positioning-marker .season {
+  list-style-position: inside;
+}
+
+.list-shorthand>ul {
+  list-style: inside circle;
+  width: 30rem;
+}
+
+.list-shorthand li {
+  margin-top: 1rem;
+  line-height: 1.8rem;
+}
+
+.table-properties {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+
+.table-properties table {
+  width: 60rem;
+}
+
+.table-properties th,
+.table-properties td {
+  padding: 0.7rem 1rem 1rem 1rem;
+}
+
+.table-properties th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 0.2rem solid #111111;
+  border-top: 0.1rem solid #999;
+  text-align: left;
+}
+
+.table-properties tr.even {
+  background-color: #efefef;
+}
+
+.table-properties tr:hover {
+  background-color: #c3e6e5;
+}
+
+.table-properties .money {
+  text-align: right;
+}
+
+.border-empty td {
+  border: 0.1rem solid #08d;
+  padding: 1.5rem;
+}
+
+.border-empty {
+  empty-cells: hide;
+}
+
+.border-empty table.one {
+  empty-cells: show;
+}
+
+.border-empty table.two {
+  empty-cells: inherit;
+}
+
+.gaps-between-cells td {
+  background-color: #08d;
+  padding: 1.5rem;
+  border: 0.2rem solid #000;
+}
+
+.gaps-between-cells table.one {
+  border-spacing: 0.5rem 1.5rem;
+  /* horizontal vertical */
+}
+
+.gaps-between-cells table.two {
+  border-collapse: collapse;
+}
+
+.styling-text-inputs input {
+  font-size: 120%;
+  color: #5a5854;
+  background-color: #f2f2f2;
+  border: 0.1rem solid #bbddbd;
+  border-radius: 0.5em;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  background-repeat: no-repeat;
+  background-position: 0.8rem 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.styling-text-inputs input:focus,
+.styling-text-inputs input:hover {
+  background-color: #fff;
+  border: 0.1rem solid #b1e1e4;
+}
+
+.styling-text-inputs input#email {
+  background-image: url('https://www.htmlandcssbook.com/code-samples/chapter-14/images/email.png');
+}
+
+.styling-text-inputs input#twitter {
+  background-image: url('https://www.htmlandcssbook.com/code-samples/chapter-14/images/twitter.png');
+}
+
+.styling-text-inputs input#web {
+  background-image: url('https://www.htmlandcssbook.com/code-samples/chapter-14/images/web.png');
+}
+
+.styling-submit-buttons input#submit {
+  color: #444;
+  text-shadow: 0rem 0.1rem 0.1rem #fff;
+  border-bottom: 0.2rem solid #b2b2b2;
+  background-color: #b9e3e3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#beeae9, to(#a8cfce)));
+  background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+}
+
+.styling-submit-buttons input#submit:hover {
+  color: #333;
+  border: 0.1rem solid #a4a4a4;
+  border-top: 0.2rem solid #b2b3b2;
+  background-color: #a0dbc4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#beeae9, to(#a8cfce)));
+  background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+}
+
+.styling-fieldsets fieldset {
+  width: 30rem;
+  border: 0.1rem solid #dcdcdc;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.styling-fieldsets legend {
+  background-color: #efefef;
+  border: 0.1rem solid #dcdcdc;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.align-form-controls div {
+  border: 0.1rem solid #efefef;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  width: 26rem;
+}
+
+.align-form-controls .title {
+  float: left;
+  width: 9rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.align-form-controls .submit {
+  text-align: right;
+}
+
+.cursor-styles a:hover {
+  cursor: url('http://profilki.pl/files/cur/1042.png'), pointer;
+}
