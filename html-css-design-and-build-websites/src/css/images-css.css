@@ -14,3 +14,41 @@
   width: 5rem;
   height: 5rem;
 }
+
+.align-images .container {
+  display: flex;
+  align-items: center;
+}
+
+.align-images img {
+  margin-right: 2rem;
+}
+
+.centering-images img {
+  display: block;
+  margin: 2rem auto;
+}
+
+.centering-images .imgSecond {
+  width: 45rem;
+  height: auto;
+}
+
+/* p{
+  color: blue;
+} */
+
+.background-images {
+  background-color: orange;
+  color: #0f1319;
+}
+
+.background-images .lazy-background {
+  background-image: url('../../assets/images/DSC07124.jpg'); /* Placeholder image */
+}
+
+.background-images .lazy-background.visible {
+  background-image: url('../../assets/images/Sticker_Mushroom_-_Mario_Party_Superstars.webp');
+  /* height: 100%; */
+  /* width: 100%; */
+}
