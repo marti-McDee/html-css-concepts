@@ -1,0 +1,10 @@
+@import url('../css/main.css');
+
+.headers-footers footer {
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.sections > section {
+  margin: 2rem 0;
+}
