@@ -4,3 +4,4 @@ function scrollToBottom() {
 
 history.scrollRestoration = 'manual'
 window.onload = scrollToBottom
+// window.alert('main was run')
