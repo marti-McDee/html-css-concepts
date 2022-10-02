@@ -52,3 +52,22 @@
   /* height: 100%; */
   /* width: 100%; */
 }
+
+.repeating-images article {
+  height: 8rem;
+  width: auto;
+  overflow-y:scroll;
+  background-image: url(
+    'https://static-s.aa-cdn.net/img/gp/20600006954124/zAT6vC26PAVD3Nsjasyir-n4NcvUqQ6PoQtHib7wUXE3ZMrMvXeCl9XNMJrjKYhfl8s?v=1'
+    );
+  /* background-repeat: repeat-x; */
+  background-attachment: scroll;
+}
+
+.background-position article {
+  background-image: url(
+    'https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/2c/53/4d2c532e-813d-14d2-6c5f-7fa95b1c5ef8/source/256x256bb.jpg'
+    );
+    background-repeat:repeat-x;
+    background-position: 50% 50%;
+}
