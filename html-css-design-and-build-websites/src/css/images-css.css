@@ -44,7 +44,8 @@
 }
 
 .background-images .lazy-background {
-  background-image: url('../../assets/images/DSC07124.jpg'); /* Placeholder image */
+  background-image: url('../../assets/images/DSC07124.jpg');
+  /* Placeholder image */
 }
 
 .background-images .lazy-background.visible {
@@ -56,18 +57,81 @@
 .repeating-images article {
   height: 8rem;
   width: auto;
-  overflow-y:scroll;
-  background-image: url(
-    'https://static-s.aa-cdn.net/img/gp/20600006954124/zAT6vC26PAVD3Nsjasyir-n4NcvUqQ6PoQtHib7wUXE3ZMrMvXeCl9XNMJrjKYhfl8s?v=1'
+  overflow-y: scroll;
+  background-image: url('https://static-s.aa-cdn.net/img/gp/20600006954124/zAT6vC26PAVD3Nsjasyir-n4NcvUqQ6PoQtHib7wUXE3ZMrMvXeCl9XNMJrjKYhfl8s?v=1'
     );
   /* background-repeat: repeat-x; */
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 .background-position article {
-  background-image: url(
-    'https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/2c/53/4d2c532e-813d-14d2-6c5f-7fa95b1c5ef8/source/256x256bb.jpg'
+  background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/2c/53/4d2c532e-813d-14d2-6c5f-7fa95b1c5ef8/source/256x256bb.jpg'
     );
-    background-repeat:repeat-x;
-    background-position: 50% 50%;
+  background-repeat: repeat-x;
+  background-position: 50% 50%;
 }
+
+.shorthand article {
+  /* background: background-color background-image background-repeat background-attachment background-position */
+  background: #fff url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/2c/53/4d2c532e-813d-14d2-6c5f-7fa95b1c5ef8/source/256x256bb.jpg') no-repeat top left,
+    #fff url('../../assets/images/star.jfif') no-repeat top right;
+}
+
+.image-rollovers article>a.button {
+  height: 36px;
+  background-image: url("https://www.htmlandcssbook.com/code-samples/chapter-16/images/button-sprite.jpg");
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.image-rollovers article>a#add-to-basket {
+  width: 174px;
+  background-position: 0px 0px;
+}
+
+.image-rollovers article>a#framing-options {
+  width: 210px;
+  background-position: -175px 0px;
+}
+
+.image-rollovers article>a#add-to-basket:hover {
+  background-position: 0px -40px;
+}
+
+.image-rollovers article>a#framing-options:hover {
+  background-position: -175px -40px;
+}
+
+.image-rollovers article>a#add-to-basket:active {
+  background-position: 0px -80px;
+}
+
+.image-rollovers article>a#framing-options:active {
+  background-position: -175px -80px;
+}
+
+.gradients article:nth-of-type(1) {
+  height: 20vh;
+  background: linear-gradient(40deg, teal, purple)
+}
+
+.gradients article:nth-of-type(2) {
+  height: 20vh;
+  background: repeating-conic-gradient(blue 14%, yellow 15%, red 33%);
+}
+
+.gradients article .stacked-linear {
+  background:
+    linear-gradient(200deg, rgba(255, 174, 188, 0.8), transparent),
+    linear-gradient (100deg, rgba(255, 174, 188, 0.8), transparent),
+    linear-gradient (300deg, rgba(255, 174, 188, 0.8), transparent);
+}
+
+.gradients article .stacked-radial {
+  background:
+    radial-gradient(circle at center, rgba(255, 174, 188, 0.8), transparent),
+    radial-gradient(circle at bottom, rgba(160, 231, 229, 0.8), transparent),
+    radial-gradient(circle at top, rgba(180, 248, 200, 0.8), transparent);
+}
+
+.gradients article .photo-gradient {}
