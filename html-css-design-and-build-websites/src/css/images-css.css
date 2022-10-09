@@ -120,18 +120,54 @@
   background: repeating-conic-gradient(blue 14%, yellow 15%, red 33%);
 }
 
-.gradients article .stacked-linear {
+.gradients article:nth-of-type(2) .stacked-linear {
   background:
     linear-gradient(200deg, rgba(255, 174, 188, 0.8), transparent),
     linear-gradient (100deg, rgba(255, 174, 188, 0.8), transparent),
     linear-gradient (300deg, rgba(255, 174, 188, 0.8), transparent);
 }
 
-.gradients article .stacked-radial {
+.gradients article:nth-of-type(2) .stacked-radial {
   background:
     radial-gradient(circle at center, rgba(255, 174, 188, 0.8), transparent),
     radial-gradient(circle at bottom, rgba(160, 231, 229, 0.8), transparent),
     radial-gradient(circle at top, rgba(180, 248, 200, 0.8), transparent);
 }
 
-.gradients article .photo-gradient {}
+.gradients article:nth-of-type(2) .photo-gradient {}
+
+.gradients article:nth-of-type(3) div {
+  width: 25rem;
+  height: 25rem;
+  border: 0.1rem solid #000;
+  display: inline-block;
+  margin: 3rem;
+}
+
+.gradients article:nth-of-type(3) .linear-gradient {
+  background: linear-gradient(45deg, #0000ff 0 50%, #008000 50% 100%);
+}
+
+/* starts from center going outward */
+.gradients article:nth-of-type(3) .radial-gradient {
+  background: radial-gradient(circle at top left, #800080 0 40%, transparent 0 40%),
+    radial-gradient(circle at bottom right, #008000 0 40%, #ffff00 40% 100%),
+  ;
+}
+
+.gradients article:nth-of-type(3) .repeating-radial-gradient {
+  background:
+   repeating-radial-gradient(circle at top left, #800080 0 1rem, #0000ff 1rem 4.5rem, #ee82ee 4.5rem 5.5rem);
+}
+
+/* goes around in a circle */
+.gradients article:nth-of-type(3) .conic-gradient {
+  background:
+   conic-gradient(from 90deg, #ffa500 0 50deg, #000000 50deg 135deg, #008000 135deg 280deg, #ffff00 280deg 360deg);
+  border-radius: 50%;
+}
+
+.gradients article:nth-of-type(3) .repeating-conic-gradient {
+  background: repeating-conic-gradient(at top left, #ff0000 0 15deg, #0000ff 15deg 25deg, #008000 25deg 40deg);
+  border-radius: 50%;
+}
