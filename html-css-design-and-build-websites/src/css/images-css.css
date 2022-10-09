@@ -157,13 +157,13 @@
 
 .gradients article:nth-of-type(3) .repeating-radial-gradient {
   background:
-   repeating-radial-gradient(circle at top left, #800080 0 1rem, #0000ff 1rem 4.5rem, #ee82ee 4.5rem 5.5rem);
+    repeating-radial-gradient(circle at top left, #800080 0 1rem, #0000ff 1rem 4.5rem, #ee82ee 4.5rem 5.5rem);
 }
 
 /* goes around in a circle */
 .gradients article:nth-of-type(3) .conic-gradient {
   background:
-   conic-gradient(from 90deg, #ffa500 0 50deg, #000000 50deg 135deg, #008000 135deg 280deg, #ffff00 280deg 360deg);
+    conic-gradient(from 90deg, #ffa500 0 50deg, #000000 50deg 135deg, #008000 135deg 280deg, #ffff00 280deg 360deg);
   border-radius: 50%;
 }
 
