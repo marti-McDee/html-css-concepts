@@ -5,6 +5,186 @@
   font-style: italic;
 }
 
-.sections > section {
+.sections>section {
   margin: 2rem 0;
+}
+
+.linking a {
+  text-decoration: none;
+}
+
+.linking a h3 {
+  border: none;
+}
+
+.linking a img {
+  width: 15rem;
+  height: auto;
+}
+
+.headers-footers footer {
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.sections>section {
+  margin: 2rem 0;
+}
+
+.linking a {
+  text-decoration: none;
+}
+
+.linking a h3 {
+  border: none;
+}
+
+.linking a img {
+  width: 15rem;
+  height: auto;
+}
+
+.sample-page header,
+.sample-page section,
+.sample-page footer,
+.sample-page aside,
+.sample-page nav,
+.sample-page article,
+.sample-page figure,
+.sample-page figcaption {
+  display: block;
+}
+
+.sample-page {
+  color: #666666;
+  background-color: #f9f8f6;
+  background-image: url("https://www.htmlandcssbook.com/code-samples/chapter-17/images/dark-wood.jpg");
+  background-position: center;
+  font-family: Georgia, Times, serif;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+.sample-page .wrapper {
+  width: 940px;
+  margin: 20px auto 20px auto;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.sample-page header {
+  height: 160px;
+  background-image: url("https://www.htmlandcssbook.com/code-samples/chapter-17/images/header.jpg");
+}
+
+.sample-page h1 {
+  text-indent: -9999px;
+  width: 940px;
+  height: 130px;
+  margin: 0px;
+}
+
+.sample-page nav,
+.sample-page footer {
+  clear: both;
+  color: #ffffff;
+  background-color: #aeaca8;
+  height: 30px;
+}
+
+.sample-page nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+.sample-page nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.sample-page nav li a {
+  color: #ffffff;
+}
+
+.sample-page nav li a:hover,
+.sample-page nav li a.current {
+  color: #000000;
+}
+
+.sample-page section.courses {
+  float: left;
+  width: 659px;
+  border-right: 1px solid #eeeeee;
+}
+
+.sample-page article {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+.sample-page hgroup {
+  margin-top: 40px;
+}
+
+.sample-page figure {
+  float: left;
+  width: 290px;
+  height: 220px;
+  padding: 5px;
+  margin: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.sample-page figcaption {
+  font-size: 90%;
+  text-align: left;
+}
+
+.sample-page aside {
+  width: 230px;
+  float: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.sample-page aside section a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sample-page aside section a:hover {
+  color: #985d6a;
+  background-color: #efefef;
+}
+
+.sample-page a {
+  color: #de6581;
+  text-decoration: none;
+}
+
+.sample-page h1,
+.sample-page h2,
+.sample-page h3 {
+  font-weight: normal;
+}
+
+.sample-page h2 {
+  margin: 10px 0px 5px 0px;
+  padding: 0px;
+}
+
+.sample-page h3 {
+  margin: 0px 0px 10px 0px;
+  color: #de6581;
+}
+
+.sample-page aside h2 {
+  padding: 30px 0px 10px 0px;
+  color: #de6581;
+}
+
+.sample-page footer {
+  font-size: 80%;
+  padding: 7px 0px 0px 20px;
 }
